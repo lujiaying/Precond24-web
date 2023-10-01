@@ -1,0 +1,12 @@
+- Preconditioning 1999, The University of Minnesota, Minneapolis, June 10-12 1999.
+- Preconditioning 2001, The Granlibakken Conference Center, Tahoe City, April 29 - May 1, 2001.
+- Preconditioning 2003, Embassy Suites Napa Valley, Napa, October 27-29, 2003.
+- Preconditioning 2005, Emory University, Atlanta, May 19-21, 2005.
+- [Preconditioning 2007](https://cerfacs.fr/en/precond07-at-cerfacs/), Météopole, Toulouse, France, July 9-12, 2007.
+- [Preconditioning 2009](https://www.math.hkbu.edu.hk/precond09/papers.html), Hong-Kong Baptist University, Hong-Kong, August 24-26, 2009.
+- [Preconditioning 2011](http://precond11.bordeaux.inria.fr/), Domaine du Haut-Carré, Bordeaux, France, May 16-18, 2011.
+- Preconditioning 2013, St Anne's College, Oxford, United Kingdom, June 19-21, 2013.
+- [Preconditioning 2015](https://www.win.tue.nl/casa/meetings/special/preconditioning2015/), Eindhoven University of Technology, Eindhoven, The Netherlands, June 17-19, 2015.
+- [Preconditioning 2017](https://www.cs.ubc.ca/~greif/precon17/), University of British Columbia, Vancouver, Canada, July 31 -- August 2, 2017.
+- [Preconditioning 2019](https://www-users.cse.umn.edu/~saad/Precon19/), University of Minnesota, Minneapolis, USA, July 1 -- July 3, 2019.
+- [Preconditioning 2022](https://www.chemnitz-am.de/precond2022/), TU Chemnitz, Chemnitz, Germany, June 8 -- June 10, 2022.

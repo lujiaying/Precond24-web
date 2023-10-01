@@ -41,6 +41,7 @@ def main(site_data_path):
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.url_map.charset = 'utf-8'
 freezer = Freezer(app)
 markdown = Markdown(app)
 
@@ -70,11 +71,19 @@ def favicon():
 @app.route("/index.html")
 def home():
     data = _data()
-    data["readme"] = open("README.md").read()
-    data["committee"] = site_data["committee"]["committee"]
+    data["readme"] = open("sitedata/indexContent.md").read()
+    #data["committee"] = site_data["committee"]["committee"]
     return render_template("index.html", **data)
 
 
+@app.route("/pastEvents.html")
+def past_events():
+    data = _data()
+    data["pastEvents"] = open("sitedata/pastEvents.md").read()
+    return render_template("pastEvents.html", **data)
+
+
+"""
 @app.route("/help.html")
 def about():
     data = _data()
@@ -114,6 +123,7 @@ def workshops():
         format_workshop(workshop) for workshop in site_data["workshops"]
     ]
     return render_template("workshops.html", **data)
+"""
 
 
 def extract_list_field(v, key):
@@ -164,6 +174,7 @@ def format_workshop(v):
 # ITEM PAGES
 
 
+"""
 @app.route("/poster_<poster>.html")
 def poster(poster):
     uid = poster
@@ -195,6 +206,7 @@ def workshop(workshop):
 def chat():
     data = _data()
     return render_template("chat.html", **data)
+"""
 
 
 # FRONT END SERVING
@@ -224,12 +236,14 @@ def serve(path):
 
 @freezer.register_generator
 def generator():
+    """
     for paper in site_data["papers"]:
         yield "poster", {"poster": str(paper["UID"])}
     for speaker in site_data["speakers"]:
         yield "speaker", {"speaker": str(speaker["UID"])}
     for workshop in site_data["workshops"]:
         yield "workshop", {"workshop": str(workshop["UID"])}
+    """
 
     for key in site_data:
         yield "serve", {"path": key}

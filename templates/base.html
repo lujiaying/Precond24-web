@@ -88,12 +88,9 @@
 {% block header %}
 {% set navigation_bar = [
 ('index.html', 'Home'),
-('calendar.html', 'Schedule'),
-('papers.html', 'Papers'),
-('workshops.html', 'Workshops'),
-('chat.html', 'Chat'),
-('help.html', 'Help'),
+('pastEvents.html', 'Past Events')
 ] -%}
+
 
 <nav
         class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
@@ -152,8 +149,21 @@
     </div>
 </div>
 {% endblock %}
-{% block footer %}
 
+{% block bottom %}
+  <!-- Sponsors -->
+  <div class="container">
+    <hr />
+    <h3>Cooperating Society</h3>
+    <div class="col-md-6 col-xs-6 mx-auto">
+      <a href="https://www.siam.org/"><img class="img-fluid" src="static/images/SIAM_IN_COOP_horizontal_teal.jpg" alt="SIAM"></a>
+      <p>SIAM Representative: <a href="https://faculty.cc.gatech.edu/~echow/">Edmond Chow</a></p>
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block footer %}
 <!-- Google Analytics -->
 <script
         async
@@ -173,8 +183,8 @@
 <!-- Footer -->
 <footer class="footer bg-light p-4">
     <div class="container">
-        <p class="float-right"><a href="#">Back to Top</a></p>
-        <p class="text-center">© 2020 {{config.organization}}</p>
+        <p class="float-right">This website is maintained by <a href="https://lujiaying.github.io/">J.Lu</a>, <a href="http://www.math.emory.edu/~yxi26/">Y.Xi</a>.</p>
+        <p class="text-left">© 2023 {{config.organization}}.</p>
     </div>
 </footer>
 
