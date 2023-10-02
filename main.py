@@ -66,13 +66,11 @@ def favicon():
 
 
 # TOP LEVEL PAGES
-
-
 @app.route("/index.html")
 def home():
     data = _data()
     data["readme"] = open("sitedata/indexContent.md").read()
-    #data["committee"] = site_data["committee"]["committee"]
+    data["committee"] = site_data["committee"]["committee"]   # show list of invited speakers
     return render_template("index.html", **data)
 
 
@@ -81,6 +79,13 @@ def past_events():
     data = _data()
     data["pastEvents"] = open("sitedata/pastEvents.md").read()
     return render_template("pastEvents.html", **data)
+
+
+@app.route("/topics.html")
+def conf_topics():
+    data = _data()
+    data["topics"] = open("sitedata/topics.md").read()
+    return render_template("topics.html", **data)
 
 
 """
@@ -286,4 +291,4 @@ if __name__ == "__main__":
         if os.getenv("FLASK_DEBUG") == "True":
             debug_val = True
 
-        app.run(port=5000, debug=debug_val, extra_files=extra_files)
+        app.run(port=10086, debug=debug_val, extra_files=extra_files)

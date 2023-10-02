@@ -22,6 +22,10 @@
       <h2 class="p-5">
         {{config.date|safe}}
       </h2>
+      <div class="countdown-flipper">
+        <div class="wrapper hidden" id="countdown-flipper" data-is-active="false"></div>
+        <a class="btn-primary btn-lg" href="#">Register for Precond 2024! (coming soon)</a>
+      </div>
     </div>
   </div>
 </div>
@@ -29,10 +33,11 @@
 
 {% block content %}
 
-{{ readme | markdown }}
-
 <!-- Organizers -->
-<!--{{ components.section("Organizers") }} -->
-<!--{{ components.organizergroup(committee) }} -->
+{{ components.section("Invited Speakers") }}
+{{ components.organizergroup(committee) }}
+
+
+{{ readme | markdown }}
 
 {% endblock %}

@@ -1,20 +1,18 @@
-## Invited Speakers
-TBD.
 
 ---
 
-## Organizers
+## <center>Organizers</center>
 
-### Conference Chairs
+#### Conference Chairs
 - Esmond G. Ng, Lawrence Berkeley National Laboratory, USA
 - Yousef Saad, University of Minnesota, USA
 - Andy Wathen, University of Oxford, UK
 
-### Local Organization Committee
+#### Local Organization Committee
 - [Edmond Chow](https://faculty.cc.gatech.edu/~echow/), Georgia Tech, USA
 - [Yuanzhe Xi](http://www.math.emory.edu/~yxi26/), Emory University, USA
 
-### Program Committee
+#### Program Committee
 - Edmond Chow (co-chairs), Georgia Tech, USA
 - Yuanzhe Xi (co-chairs), Emory University, USA
 - Hartwig Anzt, University of Tennessee, USA
